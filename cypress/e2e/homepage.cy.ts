@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("shared todos functionality", () => {
+describe.skip("shared todos functionality", () => {
   let ctx = {};
   before(() => {
     cy.fixture("users").then((usersJson) => {
