@@ -1,10 +1,10 @@
 import { defineConfig } from "cypress";
-import awsConfig from "./aws-exports.js";
+//import awsConfig from "./aws-exports.js";
 
 export default defineConfig({
   env: {
     testUserPassword: process.env.TEST_USER_PASSWORD,
-    appSyncGraphQLEndpoint: awsConfig["aws_appsync_graphqlEndpoint"],
+    //appSyncGraphQLEndpoint: awsConfig["aws_appsync_graphqlEndpoint"],
   },
   component: {
     devServer: {
@@ -15,7 +15,7 @@ export default defineConfig({
 
   e2e: {
     baseUrl: "http://localhost:3000",
-    experimentalSessionAndOrigin: true,
+    //experimentalSessionAndOrigin: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
